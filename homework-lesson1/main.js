@@ -7,17 +7,10 @@ function random_bg_color() {
   console.log(color);
 
 
-  var getClass = document.getElementById('app');
-  
-  var div = document.createElement('div');
-  div.style.margin = '30px auto';
+  var div = document.getElementById('div');
+  div.style.padding = '100px';
 
-  var span = document.createElement('span');
-  span.style.padding = '10px 20px';
-  span.style.background = color;
-
-  div.appendChild(span);
-  getClass.appendChild(div);
+  div.style.background = color;
 
 } 
 
