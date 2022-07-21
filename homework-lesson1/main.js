@@ -7,11 +7,13 @@ function random_bg_color() {
   console.log(color);
 
 
-  var div = document.getElementById('div');
-  div.style.padding = '100px';
-
-  div.style.background = color;
-
+  var div = document.createElement('div');
+  var span = document.createElement('span');
+  span.style = 'position:absolute;top:40%;width:100%;text-align:center;padding:100px';
+  span.style.background = color;
+  
+  div.appendChild(span);
+  document.body.appendChild(div);
 } 
 
 /*
